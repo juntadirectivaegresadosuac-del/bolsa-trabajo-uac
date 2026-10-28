@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="es" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bolsa NI · UAC | Negocios Internacionales</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <!-- Tally Widget Script -->
+    <script async src="https://tally.so/widgets/embed.js"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Plus Jakarta Sans', 'sans-serif'],
+                    },
+                    colors: {
+                        uac: {
+                            dark: '#0B132B',
+                            card: '#1C2541',
+                            yellow: '#EAB308',
+                            yellowHover: '#CA8A04',
+                            bg: '#F8FAFC',
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-uac-bg text-slate-800 font-sans antialiased">
+
+    <!-- NAVBAR -->
+    <nav class="bg-uac-dark text-white sticky top-0 z-40 border-b border-slate-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+            <!-- Logo -->
+            <div class="flex items-center space-x-3">
+                <div class="w-10 h-10 rounded-full bg-uac-yellow flex items-center justify-center text-uac-dark font-extrabold text-xl shadow">
+                    <i class="fa-solid fa-globe"></i>
+                </div>
+                <div>
+                    <span class="font-extrabold text-lg block leading-none">Bolsa NI · UAC</span>
+                    <span class="text-[10px] tracking-widest text-uac-yellow font-bold uppercase">Negocios Internacionales</span>
+                </div>
+            </div>
+
+            <!-- Links -->
+            <div class="hidden md:flex space-x-8 text-sm font-medium text-slate-300">
+                <a href="#vacantes" class="hover:text-uac-yellow transition">Vacantes</a>
+                <a href="#comunidad" class="hover:text-uac-yellow transition">Comunidad</a>
+                <a href="#para-empresas" class="hover:text-uac-yellow transition">Para Empresas</a>
+            </div>
+
+            <!-- CTA Header -->
+            <div>
+                <a href="#vacantes" class="bg-uac-yellow hover:bg-uac-yellowHover text-uac-dark font-bold px-5 py-2.5 rounded-full text-xs transition flex items-center gap-2 shadow-md">
+                    Explorar <i class="fa-solid fa-chevron-right text-[10px]"></i>
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- HERO SECTION -->
+    <header class="bg-uac-dark text-white py-16 md:py-20 px-4 relative overflow-hidden">
+        <div class="max-w-5xl mx-auto space-y-8 relative z-10">
+            <!-- Badge convocatoria -->
+            <div class="inline-flex items-center gap-2 bg-uac-yellow/10 border border-uac-yellow/30 text-uac-yellow px-4 py-1.5 rounded-full text-xs font-bold uppercase tracking-wider">
+                <i class="fa-solid fa-tag text-xs"></i>
+                CONVOCATORIAS NOV - DIC 2026
+            </div>
+
+            <!-- Titular principal -->
+            <h1 class="text-3xl sm:text-5xl md:text-6xl font-extrabold tracking-tight leading-none max-w-4xl">
+                Conecta con el <span class="text-uac-yellow italic">mercado global</span>. Vacantes exclusivas de Noviembre y Diciembre.
+            </h1>
+
+            <p class="text-slate-300 text-sm sm:text-base max-w-3xl leading-relaxed">
+                Plataforma oficial de inserción laboral para estudiantes y egresados en Negocios Internacionales. Accede a puestos en <strong>Freight Forwarding, Comercio Exterior, Logística y Banca Internacional</strong>.
+            </p>
+
+            <!-- Botones CTA -->
+            <div class="flex flex-wrap gap-4 pt-2">
+                <a href="#vacantes" class="bg-uac-yellow hover:bg-uac-yellowHover text-uac-dark font-extrabold px-6 py-3.5 rounded-full text-sm transition flex items-center gap-2 shadow-lg">
+                    Explorar Vacantes Activas <i class="fa-solid fa-chevron-down text-xs"></i>
+                </a>
+                <a href="#comunidad" class="border border-slate-700 hover:border-slate-500 bg-uac-card/50 text-white font-bold px-6 py-3.5 rounded-full text-sm transition">
+                    Únete a la comunidad
+                </a>
+            </div>
+
+            <!-- Tarjetas de Métricas -->
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-4 pt-8">
+                <div class="bg-uac-card/60 border border-slate-800 p-4 rounded-xl space-y-1">
+                    <i class="fa-solid fa-briefcase text-uac-yellow text-sm"></i>
+                    <div class="text-2xl font-extrabold text-uac-yellow">12</div>
+                    <div class="text-[10px] text-slate-400 uppercase tracking-wider font-semibold">Vacantes Activas</div>
+                </div>
+                <div class="bg-uac-card/60 border border-slate-800 p-4 rounded-xl space-y-1">
+                    <i class="fa-regular fa-calendar text-uac-yellow text-sm"></i>
+                    <div class="text-2xl font-extrabold text-white">6</div>
+                    <div class="text-[10px] text-slate-400 uppercase tracking-wider font-semibold">Noviembre</div>
+                </div>
+                <div class="bg-uac-card/60 border border-slate-800 p-4 rounded-xl space-y-1">
+                    <i class="fa-regular fa-calendar text-uac-yellow text-sm"></i>
+                    <div class="text-2xl font-extrabold text-white">6</div>
+                    <div class="text-[10px] text-slate-400 uppercase tracking-wider font-semibold">Diciembre</div>
+                </div>
+                <div class="bg-uac-card/60 border border-slate-800 p-4 rounded-xl space-y-1">
+                    <i class="fa-solid fa-users text-uac-yellow text-sm"></i>
+                    <div class="text-2xl font-extrabold text-uac-yellow">1451+</div>
+                    <div class="text-[10px] text-slate-400 uppercase tracking-wider font-semibold">Postulantes</div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- VACANTES SECCIÓN -->
+    <main id="vacantes" class="max-w-6xl mx-auto px-4 py-12 space-y-8">
+        <div>
+            <span class="inline-block bg-uac-yellow/20 text-uac-yellow font-extrabold text-[10px] tracking-widest uppercase px-3 py-1 rounded-full mb-3 border border-uac-yellow/30">
+                VACANTES ACTIVAS
+            </span>
+            <h2 class="text-2xl sm:text-4xl font-extrabold text-slate-900">
+                Oportunidades de <span class="text-uac-yellow italic">Noviembre & Diciembre</span>
+            </h2>
+            <p class="text-xs sm:text-sm text-slate-500 mt-1">Filtra por modalidad, sector o mes. Reclutadores revisan activamente estos puestos.</p>
+            <p class="text-xs font-bold text-slate-700 mt-3"><span id="jobCount">12</span> vacantes encontradas</p>
+        </div>
+
+        <!-- BUSCADOR Y FILTROS -->
+        <div class="bg-white p-4 rounded-2xl border border-slate-200 shadow-sm space-y-3">
+            <div class="relative">
+                <i class="fa-solid fa-magnifying-glass absolute left-4 top-1/2 -translate-y-1/2 text-slate-400 text-sm"></i>
+                <input type="text" id="searchInput" oninput="filterJobs()" placeholder="Buscar: 'Logística', 'Comercio Exterior', 'Aduanas', 'DHL'..." class="w-full pl-10 pr-4 py-3 bg-slate-50 border border-slate-200 rounded-xl text-xs sm:text-sm focus:outline-none focus:ring-2 focus:ring-uac-yellow">
+            </div>
+            
+            <div class="flex flex-wrap gap-2 pt-1">
+                <select id="filterModalidad" onchange="filterJobs()" class="bg-slate-50 border border-slate-200 rounded-xl px-4 py-2 text-xs font-semibold text-slate-600 focus:outline-none focus:ring-2 focus:ring-uac-yellow">
+                    <option value="">Todas las Modalidades</option>
+                    <option value="Híbrido">Híbrido</option>
+                    <option value="Presencial">Presencial</option>
+                    <option value="Remoto">Remoto</option>
+                </select>
+                <select id="filterMes" onchange="filterJobs()" class="bg-slate-50 border border-slate-200 rounded-xl px-4 py-2 text-xs font-semibold text-slate-600 focus:outline-none focus:ring-2 focus:ring-uac-yellow">
+                    <option value="">Todos los Meses</option>
+                    <option value="Noviembre">Noviembre</option>
+                    <option value="Diciembre">Diciembre</option>
+                </select>
+            </div>
+        </div>
+
+        <!-- GRID TARJETAS DE VACANTES -->
+        <div id="jobsGrid" class="grid grid-cols-1 md:grid-cols-2 gap-6">
+            <!-- Inyectado dinámicamente con JavaScript -->
+        </div>
+    </main>
+
+    <!-- REDES SOCIALES -->
+    <section id="comunidad" class="max-w-6xl mx-auto px-4 py-12 border-t border-slate-200">
+        <div class="space-y-2 mb-8">
+            <span class="inline-block bg-uac-yellow/20 text-uac-yellow font-extrabold text-[10px] tracking-widest uppercase px-3 py-1 rounded-full border border-uac-yellow/30">
+                ¡BIENVENIDOS(AS)!
+            </span>
+            <h2 class="text-2xl sm:text-3xl font-extrabold text-slate-900">
+                Síguenos en nuestras <span class="text-uac-yellow italic">redes sociales</span>
+            </h2>
+            <p class="text-xs sm:text-sm text-slate-500">Si aún no nos sigues, <strong>¿qué esperas?</strong> Compartimos cada semana nuevas vacantes, consejos de carrera, eventos y testimonios de egresados en Negocios Internacionales.</p>
+            <p class="text
